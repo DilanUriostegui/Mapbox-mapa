@@ -13,6 +13,21 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+         
+                username = 'mapbox'
+                password = "sk.eyJ1IjoiZGlsYW51cmlvc3RlZ3VpIiwiYSI6ImNrbndpd3E1OTBkZDEycG84MGl0dGs4ejkifQ.NFRK9sU9zhqgBxpnJexxfw"
+            }
+        }
+
+
+
+
         google()
         jcenter()
     }
